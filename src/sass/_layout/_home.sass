@@ -1,0 +1,57 @@
+/*homepage*/
+
+.home-banner
+  position: relative
+  padding: 0 60px
+  background-color: #ffffff
+  max-height: 100vh
+  overflow: hidden
+  &__video
+    width: 100%
+    height: auto
+
+@media (max-width: $md)
+  .home-banner
+    height: auto
+    padding: 0 60px
+    video
+      margin-top: 54px
+
+@media (max-width: $sm)
+  .home-banner
+    padding: 0 15px
+
+.admin-bar
+  .home-banner
+    max-height: 97vh
+
+.banner
+  &__circle
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 28px 8px!important
+    border-radius: 50%
+    width: 98px
+    height: 98px
+    background-color: #e7315b
+    position: absolute
+    right: 10px
+    top: -20px
+    z-index: 3
+    text-align: center
+    font-family: "WalsheimThin"!important
+    font-size: 14px!important
+    line-height: 18px
+    letter-spacing: 0.075em
+    color: #FFF
+    font-weight: 400
+    text-transform: uppercase
+    -webkit-transform: rotate(20deg)
+    -moz-transform: rotate(20deg)
+    -ms-transform: rotate(20deg)
+    -o-transform: rotate(20deg)
+
+.page-template-page-home
+  #main
+    padding-top: 60px

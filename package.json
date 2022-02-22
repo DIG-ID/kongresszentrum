@@ -1,5 +1,5 @@
 {
-  "name": "kreuz-kongresszentrum",
+  "name": "kongresszentrum-kreuz",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DIG-ID/kreuz-kongresszentrum.git"
+    "url": "git+https://github.com/DIG-ID/kongresszentrum-kreuz.git"
   },
   "author": "dig.id",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DIG-ID/kreuz-kongresszentrum/issues"
+    "url": "https://github.com/DIG-ID/kongresszentrum-kreuz/issues"
   },
-  "homepage": "https://github.com/DIG-ID/kreuz-kongresszentrum#readme",
+  "homepage": "https://github.com/DIG-ID/kongresszentrum-kreuz#readme",
   "devDependencies": {
     "browser-sync": "^2.27.7",
     "browser-sync-webpack-plugin": "^2.3.0",

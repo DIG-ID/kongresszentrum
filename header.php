@@ -59,9 +59,9 @@
 							)
 						);
 						?>
-						<?php //do_action( 'wpml_add_language_selector' ); ?>
+						<?php do_action( 'wpml_add_language_selector' ); ?>
 						<a href="https://www.simplebooking.it/ibe/hotelbooking/search?hid=3565&lang=DE" target="_blank" class="button button__blue button__booking button__desktop"><?php esc_html_e( 'BUCHEN', 'kreuz-bern' ); ?></a>
-						<?php //get_template_part( 'template-parts/menu-mobile' ); ?>
+						<?php get_template_part( 'template-parts/menu-mobile' ); ?>
 				</nav><!-- .site-navigation -->
 
 			</div><!-- #wrapper-navbar end -->

@@ -1,4 +1,22 @@
-.swiper-container-single-room
+.swiper-button-prev,
+.swiper-button-next
+  color: #fff
+  &::after
+    font-family: $slider-font
+
+.swiper-button-prev
+  &::after
+    content: '\e900'
+
+.swiper-button-next
+  &::after
+    content: '\e901'
+
+.swiper-container-block-slider
+  overflow: hidden
+  position: relative
+
+.swiper-container-wide-slider
   height: 630px
   padding-bottom: 30px
   background-color: $primary-color
@@ -46,11 +64,13 @@
       color: #fff
 
 @media (max-width: $lg)
-  .rooms-template-default
+  .seminare_rooms-template-default,
+  .banquet-template-default 
     .block-image--slider
       min-height: auto
-  .swiper-container-single-room
+  .swiper-container-wide-slider
     height: auto
     padding-bottom: 0px
     .swiper-pagination
       display: none
+

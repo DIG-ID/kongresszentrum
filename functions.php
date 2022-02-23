@@ -25,6 +25,8 @@ function kongresszentrum_theme_setup() {
 
 	add_image_size( 'main-block-thumbnail', 462, 330, array( 'center', 'center' ) );
 
+	add_image_size( 'banner-slider', 1920, 1080, array( 'center', 'center' ) );
+
 }
 
 add_action( 'after_setup_theme', 'kongresszentrum_theme_setup' );

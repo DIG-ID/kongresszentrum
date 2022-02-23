@@ -1,4 +1,4 @@
-.block
+.block-sidebar
   display: flex
   flex-direction: column
   min-height: 300px
@@ -7,7 +7,7 @@
   background-color: #fff
   position: relative
   &__title
-    font-family: $primary-font
+    font-family: $primary-font-medium
     font-size: 22px
     font-weight: normal
     line-height: 27px
@@ -69,36 +69,31 @@
     text-transform: uppercase
     transform: rotate(20deg)
     -webkit-font-smoothing: antialiased
-
-
-
-.block-inverted
-  background-color: $primary-color
-  .block__title
-    color: #fff
-  .block__text
-    color: #fff
-  .block__btn
-    border-color: #fff
-    color: #fff
-    &:hover
-      background-color: #fff
-      color: $primary-color
-
-.page-template-page-gallery
-  .block
+  &--inverted
     background-color: $primary-color
-    .block__title
+    .block-sidebar__title
       color: #fff
-    .block__text
+    .block-sidebar__text
       color: #fff
-    .block__btn
+    .block-sidebar__btn
       border-color: #fff
       color: #fff
       &:hover
         background-color: #fff
         color: $primary-color
+  &--technical-equipment
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    span
+      display: block
+      font-weight: 600
+  &--overviews
+    .block-sidebar__btn
+      &:first-of-type
+        line-height: 16px
+        margin-bottom: 15px
 
 @media (max-width: $lg)
-  .block
+  .block-sidebar
     padding: 22px

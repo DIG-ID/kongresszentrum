@@ -8,6 +8,11 @@ if ( $sidebar_blocks ) :
 		$block_title    = get_the_title( $sidebar_block->ID );
 		$block_buttons  = get_field( 'block_button_link', $sidebar_block->ID );
 		$block_template = 'block-sidebar';
+		$block_link_in_new_window = '';
+
+		if ( get_field( 'block_open_in_new_window', $sidebar_block->ID ) ) :
+			$block_link_in_new_window = 'target="_blank"';
+		endif;
 
 		if ( 'dark' === get_field( 'block_template', $sidebar_block->ID ) ) :
 			$block_template = 'block-sidebar block-sidebar--inverted';
@@ -19,7 +24,7 @@ if ( $sidebar_blocks ) :
 				<p class="block-sidebar__text"><?php the_field( 'block_description', $sidebar_block->ID ); ?></p>
 				<?php
 				if ( $block_buttons ) :
-					echo '<a class="block-sidebar__btn" href="' . get_field( 'block_button_link', $sidebar_block->ID ) . '">' . get_field( 'block_button_title', $sidebar_block->ID ) . '</a>';
+					echo '<a class="block-sidebar__btn"' . $block_link_in_new_window . ' href="' . get_field( 'block_button_link', $sidebar_block->ID ) . '">' . get_field( 'block_button_title', $sidebar_block->ID ) . '</a>';
 				endif;
 				?>
 			</div>

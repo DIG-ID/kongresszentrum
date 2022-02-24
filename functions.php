@@ -40,7 +40,7 @@ function theme_enqueue_styles() {
 	$theme_version = $the_theme->get( 'Version' );
 	wp_enqueue_style( 'theme-styles', get_stylesheet_directory_uri() . '/dist/main.css', array(), $theme_version );
 	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/dist/main.js', array( 'jquery' ), $theme_version, true );
+	wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/dist/main.js', array( 'jquery' ), $theme_version, false);
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
@@ -77,4 +77,4 @@ require get_template_directory() . '/inc/theme-optimizations.php';
 require get_template_directory() . '/inc/theme-template-tags.php';
 
 // Theme customizer options.
-//require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/inc/customizer.php';

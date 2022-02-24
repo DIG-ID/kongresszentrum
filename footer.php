@@ -1,35 +1,24 @@
-<?php
-/**
- * The template for displaying the footer.
- *
- * @package kreuzbern
- */
-
-// Exit if accessed directly.
-defined( 'ABSPATH' ) || exit;
-
-?>
 		<footer id="footer-wrapper">
 			<div class="container">
 				<div class="row justify-content-between align-items-start">
-					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 px-15 footer-block">
-						<?php //echo wp_kses_post( get_theme_mod( 'block-1' ) ); ?>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3 px-15 footer-block">
+						<?php
+						$footer_logo = get_theme_mod( 'block-1' );
+						if ( $footer_logo ) :
+							echo wp_get_attachment_image( $footer_logo, 'full' );
+						endif;
+						?>
 					</div>
-					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 px-15 footer-block">
-						<?php //echo wp_kses_post( get_theme_mod( 'block-2' ) ); ?>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3 px-15 footer-block">
+						<?php echo wp_kses_post( get_theme_mod( 'block-2' ) ); ?>
 					</div>
-					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 px-15 footer-block">
-						<?php //echo wp_kses_post( get_theme_mod( 'block-3' ) ); ?>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3 px-15 footer-block">
+						<?php echo wp_kses_post( get_theme_mod( 'block-3' ) ); ?>
 					</div>
-					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 px-15 footer-block">
-						<?php //echo wp_kses_post( get_theme_mod( 'block-4' ) ); ?>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3 px-15 footer-block">
+						<?php echo wp_kses_post( get_theme_mod( 'block-4' ) ); ?>
 					</div>
 				</div><!-- row end -->
-				<div class="row align-items-center justify-content-center d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxxl-none">
-					<div class="col-12 px-15">
-						<p> <a class="footer-contact-number" href="tel:+41313299595">TEL + 41 31 329 95 95</a></p>
-					</div>
-				</div>
 				<div class="row justify-content-center">
 					<div class="col-1">
 						<a class="scrollToTop" href="javascript:void(0);">
@@ -41,7 +30,6 @@ defined( 'ABSPATH' ) || exit;
 		</footer><!-- wrapper end -->
 
 		</div><!-- #page we need this extra closing tag here -->
-		<?php get_template_part( 'template-parts/maps-menu' ); ?>
 		<?php wp_footer(); ?>
 	</body>
 

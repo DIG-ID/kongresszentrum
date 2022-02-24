@@ -52,4 +52,6 @@ get_header(); ?>
 
 	<?php do_action( 'wrapper_close' ); ?>
 
+	<?php get_template_part( 'template-parts/maps-menu' ); ?>
+
 <?php get_footer();

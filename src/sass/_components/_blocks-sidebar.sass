@@ -14,7 +14,7 @@
     letter-spacing: 0.06em
     text-transform: uppercase
     color: #000
-    hyphens: none
+    hyphens: auto
     -webkit-font-smoothing: antialiased
     margin-bottom: 10px
   &__text
@@ -23,14 +23,14 @@
     margin: 0
     padding: 0
     font-family: $primary-font
-    line-height: 19.5px
+    line-height: 20px
     font-size: 13.6px
     letter-spacing: 0.05em
     hyphens: auto
     -webkit-font-smoothing: antialiased
     a
       text-decoration: none
-      color: #fff
+      color: #000
   &__btn
     display: block
     width: 100%
@@ -75,6 +75,8 @@
       color: #fff
     .block-sidebar__text
       color: #fff
+      a
+        color: #fff
     .block-sidebar__btn
       border-color: #fff
       color: #fff
@@ -88,6 +90,7 @@
     span
       display: block
       font-weight: 600
+      color: $primary-color
   &--overviews
     .block-sidebar__btn
       &:first-of-type

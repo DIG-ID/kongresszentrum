@@ -54,10 +54,13 @@
       margin: 10px
 
 @media (max-width: $xl)
+  .button__booking--mobile
+    display: block
+  .menu__container--mobile
+    padding-left: 0px
+    padding-right: 0px
   .custom-logo-link
-    padding: 15px
-    img
-      width: 140px
+    padding: 20px 0px
 
   .wpml-ls-legacy-list-horizontal
     padding: 8px
@@ -76,10 +79,9 @@
       text-decoration: underline
 
   .navbar
-    padding: 0
     .menu-item
       margin: 0
-      padding: 0 20px 0 15px
+      padding: 0px
       a
         color: #000
         font-family: "WalsheimThin"
@@ -93,13 +95,16 @@
         &:hover
           border-bottom: 1px solid #626262
     &-toggle
+      background-color: $primary-color
       .icon-bar
         display: block
         width: 22px
         height: 2px
         margin-top: 4px
         border-radius: 1px
-        background-color: #000
+        background-color: #fff
+        &:first-child
+          margin-top: 0px
 
   .main-block
     &__btn--dark
@@ -124,10 +129,6 @@
   .lang-switcher-mobile
     margin-bottom: 25px
 
-  .menu
-    &__container--mobile
-      padding-right: 18px
-
   #sb
     &-container
       display: none
@@ -136,21 +137,28 @@
     &-container-fr
       display: none
 
-  #navbar-mobile
-    border-top: 1px solid #000
-
   #opener
     display: block
     outline: 0
-    background-color: transparent
+    background-color: $primary-color
     position: relative
     float: right
-    padding: 11px 18px
+    padding: 10px 13px
     border: none
     &__menu
       min-height: calc(99vh - 60px)
-      margin-top: 8px
+      margin-top: 20px
       flex-basis: 100%
       flex-grow: 1
       align-items: center
-      background-color: #ebf0f0
+      background-color: #fff
+
+@media (max-width: $md)
+  .navbar
+    padding: 0px 30px
+
+@media (max-width: $sm)
+  .custom-logo-link
+    padding: 0px
+  .navbar
+    padding: 25px

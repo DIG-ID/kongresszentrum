@@ -2,6 +2,7 @@
 	<div class="swiper slider-banner-container">
 		<div class="swiper-wrapper">
 			<?php
+			$slider_banner_badge = get_field( 'banner_badge' );
 			$slider_banner_args = array(
 				'post_type' => 'seminare_rooms',
 				'nopaging'  => true,
@@ -14,7 +15,7 @@
 					?>
 					<article class="slider-banner swiper-slide">
 						<?php the_post_thumbnail( 'banner-slider' ); ?>
-						<div class="slider-banner__content">
+						<div class="slider-banner__content d-none d-sm-none d-md-none d-lg-none d-xl-flex">
 							<div class="slider-banner__inner-content">
 								<h2 class="slider-banner__title"><?php the_title(); ?></h2>
 
@@ -39,6 +40,10 @@
 		</div>
 		<div class="swiper-button-prev"></div>
 		<div class="swiper-button-next"></div>
+		<?php if ( $slider_banner_badge ) :
+			echo '<a class="slider-banner__badge" href="' . get_field( 'banner_badge_link' ) . '" target="_blank">' . wp_get_attachment_image( $slider_banner_badge, 'full' ) . '</a>';
+		endif; ?>
+		<a href="http://kongress.kreuzbern.ch/default.aspx" target="_blank" class="button button__blue button__booking button__booking--mobile"><?php esc_html_e( 'Reservation', 'kongresszentrum-kreuz' ); ?></a>
 	</div>
 
 </section>

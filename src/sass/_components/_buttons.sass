@@ -28,14 +28,24 @@
     font-size: 12px
     display: block
     text-decoration: none
+    &--mobile
+      position: absolute
+      bottom: 0px
+      z-index: 4
+      text-align: center
+      width: 100%
   &__tel--wrapper
-    padding: 0 2px 0 15px
     a
       text-transform: none
   &__email--wrapper
-    padding: 0 15px 0 2px
     a
       text-transform: none
   &__booking--wrapper
+    .main-block__btn--dark
+      margin-left: 0px
     button
       padding: 8px 0
+
+@media (min-width: $xl)
+  .button__booking--mobile
+    display: none

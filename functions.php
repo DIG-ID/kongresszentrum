@@ -63,12 +63,12 @@ function register_custom_language_widget() {
 add_action( 'widgets_init', 'register_custom_language_widget' );
 
 // Google maps
-/*function my_acf_init() {
+function my_acf_init() {
 	acf_update_setting( 'google_api_key', 'AIzaSyCB2RShyxiN7xPsQy1QI_SbqXXjW5p08S0' );
 }
-if ( is_page_template( array( 'page-attractions.php', 'page-contacts.php' ) ) ) :
+if ( is_page_template( 'page-contacts.php' ) ) :
 	add_action( 'acf/init', 'my_acf_init' );
-endif;*/
+endif;
 
 // Theme otimizations.
 require get_template_directory() . '/inc/theme-optimizations.php';

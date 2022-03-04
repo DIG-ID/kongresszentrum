@@ -33,7 +33,7 @@ get_header(); ?>
 							<h1 class="block-image__title"><?php the_title(); ?></h1>
 							<div class="block-image__text"><?php the_content(); ?></div>
 							<div class="block-image__btn--wrapper">
-								<a class="block-image__btn" href="<?php the_field( 'offer_pdf_file' ); ?>" target="_blank"><?php esc_html_e( 'PDF', 'kongresszentrum-kreuz' ); ?></a>
+								<?php icl_link_to_element( 718, 'post', esc_html__( 'Back to Overview', 'kongresszentrum-kreuz' ) ); ?>
 								<a class="block-image__btn block-image__btn--dark" href="mailto:<?php the_field( 'offer_send_request_link' ); ?>" target="_blank"><?php esc_html_e( 'ANFRAGE SENDEN', 'kongresszentrum-kreuz' ); ?></a>
 							</div>
 						</div>

@@ -38,7 +38,7 @@ get_header(); ?>
 							<div class="block-image__text"><?php the_content(); ?></div>
 							<div class="block-image__btn--wrapper">
 								<?php //get_page_link(40); ?>
-								<?php icl_link_to_element( 14, 'post', esc_html__( 'Back to Ovreview', 'kongresszentrum-kreuz' ) ); ?>
+								<?php icl_link_to_element( 14, 'post', esc_html__( 'Back to Overview', 'kongresszentrum-kreuz' ) ); ?>
 								<a class="block-image__btn block-image__btn--dark" href="<?php the_field( 'seminare_room_pdf_file' ); ?>" target="_blank"><?php the_field( 'seminare_room_pdf_button_title' ); ?></a>
 							</div>
 						</div>

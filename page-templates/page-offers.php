@@ -24,7 +24,24 @@ get_header(); ?>
 						?>
 						<div class="col-12 col-sm-12 col-md-12 col-lg-6 px-15">
 							<article class="main-block">
-								<?php the_post_thumbnail( 'main-block-thumbnail' ); ?>
+								<?php
+								$offers_gallery = get_field( 'offers_gallery' );
+								if ( $offers_gallery ) :
+									?>
+									<div class="swiper-container-block-slider">
+										<div class="swiper-wrapper">
+											<?php foreach ( $offers_gallery as $gallery_img ) : ?>
+												<a href="<?php echo esc_url( get_permalink() ); ?>" class="swiper-slide">
+													<?php echo wp_get_attachment_image( $gallery_img, 'main-block-thumbnail' ); ?>
+												</a>
+											<?php endforeach; ?>
+										</div>
+										<div class="swiper-button-prev swiper-button__banquets"></div>
+										<div class="swiper-button-next swiper-button__banquets"></div>
+									</div>
+									<?php
+								endif;
+								?>
 								<div class="main-block__content">
 									<h2 class="main-block__title"><?php the_title(); ?></h2>
 									<p class="main-block__text"><?php the_field( 'offer_small_description' ); ?></p>

@@ -21,7 +21,7 @@
 	<div class="menu__container--mobile">
 		<div class="row">
 			<div class="col-12 col-sm-12 col-md-12 col-lg-12 button__booking--wrapper">
-				<a href="https://www.simplebooking.it/ibe/hotelbooking/search?hid=3565&lang=en" target="_blank" class="main-block__btn main-block__btn--dark button__menumob"><?php esc_html_e( 'RESERVATION', 'kongresszentrum-kreuz' ); ?></a>
+				<a href="http://kongress.kreuzbern.ch/default.aspx" target="_blank" class="main-block__btn main-block__btn--dark button__menumob"><?php esc_html_e( 'RESERVATION', 'kongresszentrum-kreuz' ); ?></a>
 			</div>
 		</div>
 	</div>

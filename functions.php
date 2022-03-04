@@ -5,7 +5,7 @@ function kongresszentrum_theme_setup() {
 
 	register_nav_menus(
 		array(
-			'primary' => __( 'Primary Menu', 'kongresszentrum' ),
+			'primary' => __( 'Primary Menu', 'kongresszentrum-kreuz' ),
 		)
 	);
 

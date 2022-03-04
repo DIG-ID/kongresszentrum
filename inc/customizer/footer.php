@@ -32,7 +32,7 @@ $wp_customize->add_control(
 			'mime_type'   => 'image',
 			'section'     => 'footer_section',
 			'priority'    => 1,
-			'label'       => __( 'Footer logo', 'kreuz-bern' ),
+			'label'       => __( 'Footer logo', 'kongresszentrum-kreuz' ),
 			'description' => '',
 		)
 	)

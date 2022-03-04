@@ -15,6 +15,7 @@ get_header(); ?>
 					<section class="google-maps-wrapper">
 						<?php
 							$location = get_field( 'google-map' );
+							var_dump($location);
 							if ( $location ) : ?>
 								<div class="acf-map map-contacts" data-zoom="12">
 									<div class="marker" data-lat="<?php echo esc_attr($location['lat']); ?>" data-lng="<?php echo esc_attr($location['lng']); ?>"></div>

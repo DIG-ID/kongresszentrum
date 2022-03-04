@@ -34,14 +34,13 @@ add_action( 'after_setup_theme', 'kongresszentrum_theme_setup' );
 
 // Enqueue styles and scripts
 function theme_enqueue_styles() {
-
 	// Get the theme data
 	$the_theme     = wp_get_theme();
 	$theme_version = $the_theme->get( 'Version' );
 	wp_enqueue_style( 'theme-styles', get_stylesheet_directory_uri() . '/dist/main.css', array(), $theme_version );
 	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/dist/main.js', array( 'jquery' ), $theme_version, true);
-	wp_enqueue_script( 'google-map-api', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCB2RShyxiN7xPsQy1QI_SbqXXjW5p08S0', true );
+	wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/dist/main.js', array( 'jquery' ), $theme_version, true );
+	wp_enqueue_script( 'google-map-api', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCB2RShyxiN7xPsQy1QI_SbqXXjW5p08S0', array(), $theme_version, true );
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );

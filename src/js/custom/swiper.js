@@ -9,6 +9,7 @@ $(function() {
     direction: 'horizontal',
     slidesPerView: 1,
     speed: 2000,
+    loop: true,
     centeredSlides: true,
     effect: 'fade',
     navigation: {

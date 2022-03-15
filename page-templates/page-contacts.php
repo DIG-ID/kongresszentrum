@@ -41,7 +41,7 @@ get_header(); ?>
 
 		<?php do_action( 'before_main_sidebar' ); ?>
 			<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-12 px-15">
-				<div class="block-sidebar block-sidebar--inverted">
+				<div class="block-sidebar">
 					<h3 class="block-sidebar__title"><?php the_field( 'contact_title' ); ?></h3>
 					<p class="block-sidebar__text"><?php the_field( 'contact_content' ); ?></p>
 					<a class="block-sidebar__btn" href="mailto:<?php the_field( 'contact_button_link' ); ?>"><?php the_field( 'contact_button_title' ); ?></a>

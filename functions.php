@@ -49,13 +49,13 @@ add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 function register_custom_language_widget() {
 	register_sidebar(
 		array(
-		'id'            => 'lang-switcher-mobile',
-		'name'          => esc_html__( 'Language Switcher Mobile Widget' ),
-		'description'   => esc_html__( 'Widget area for language selector mobile' ),
-		'before_widget' => '<div id="%1$s" class="col-sm-12 col-md-2 widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '',
-		'after_title'   => '',
+			'id'            => 'lang-switcher-mobile',
+			'name'          => esc_html__( 'Language Switcher Mobile Widget' ),
+			'description'   => esc_html__( 'Widget area for language selector mobile' ),
+			'before_widget' => '<div id="%1$s" class="col-sm-12 col-md-2 widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '',
+			'after_title'   => '',
 		)
 	);
 }

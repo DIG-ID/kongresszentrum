@@ -71,13 +71,13 @@ add_action( 'acf/init', 'my_acf_init' );
 
 
 // Theme otimizations.
-require get_template_directory() . '/inc/theme-optimizations.php';
+//require get_template_directory() . '/inc/theme-optimizations.php';
 
 // Theme custom template tags.
 require get_template_directory() . '/inc/theme-template-tags.php';
 
 // Theme customizer options.
-//require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/inc/customizer.php';
 
 // Theme custom admin settings.
 require get_template_directory() . '/inc/theme-admin-settings.php';

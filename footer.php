@@ -1,14 +1,7 @@
 		<footer id="footer-wrapper">
 			<div class="container">
 				<div class="row justify-content-between align-items-start">
-					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3 px-15 footer-block">
-						<?php
-						$footer_logo = get_theme_mod( 'block-1' );
-						if ( $footer_logo ) :
-							echo wp_get_attachment_image( $footer_logo, 'full' );
-						endif;
-						?>
-					</div>
+
 					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3 px-15 footer-block">
 						<?php echo wp_kses_post( wpautop( get_theme_mod( 'block-2' ) ) ); ?>
 					</div>
@@ -17,6 +10,15 @@
 					</div>
 					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3 px-15 footer-block">
 						<?php echo wp_kses_post( wpautop( get_theme_mod( 'block-4' ) ) ); ?>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3 px-15 footer-block">
+						<?php
+						/*$footer_logo = get_theme_mod( 'block-1' );
+						if ( $footer_logo ) :
+							echo wp_get_attachment_image( $footer_logo, 'full' );
+						endif;*/
+						?>
+						<img src="<?php echo get_template_directory_uri() . '/src/images/image003.png'; ?>" alt="logo" style="width:100%;max-width:100%;height:auto;object-fit:cover;">
 					</div>
 				</div><!-- row end -->
 				<div class="row justify-content-center">

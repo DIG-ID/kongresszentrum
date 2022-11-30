@@ -18,7 +18,7 @@
 							echo wp_get_attachment_image( $footer_logo, 'full' );
 						endif;*/
 						?>
-						<img src="<?php echo get_template_directory_uri() . '/src/images/image003.png'; ?>" alt="logo" style="width:100%;max-width:100%;height:auto;object-fit:cover;">
+						<img src="<?php echo get_template_directory_uri() . '/src/images/image003.png'; ?>" alt="logo" style="max-width:100%;height:auto;object-fit:cover;">
 					</div>
 				</div><!-- row end -->
 				<div class="row justify-content-center">

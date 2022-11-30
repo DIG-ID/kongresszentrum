@@ -11,7 +11,7 @@
 					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3 px-15 footer-block">
 						<?php echo wp_kses_post( wpautop( get_theme_mod( 'block-4' ) ) ); ?>
 					</div>
-					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3 px-15 footer-block text-end">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3 px-15 footer-block text-center text-lg-end">
 						<?php
 						/*$footer_logo = get_theme_mod( 'block-1' );
 						if ( $footer_logo ) :

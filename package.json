@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/DIG-ID/kongresszentrum-kreuz#readme",
   "devDependencies": {
-    "browser-sync": "^2.27.7",
+    "browser-sync": "^3.0.3",
     "browser-sync-webpack-plugin": "^2.3.0",
     "jquery": "^3.6.0",
     "laravel-mix": "^6.0.42",
